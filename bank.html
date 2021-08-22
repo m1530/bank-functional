@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank hom page</title>
+    <!-- add tailwind css  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-4xl mt-8">Welcome to our bank <span
+                class="text-pink-500 font-bold">website!!!</span></h1>
+    </header>
+
+    <main class="w-3/4 mx-auto mt-8">
+        <section>
+            <h1 id="error" class="text-2xl text-red-800 bg-green-400 p-4 m-4" hidden></h1>
+            <div class="grid grid-cols-3 gap-4">
+
+                <div class="bg-green-300 p-8 rounded text-white">
+                    <h1 class="text-2xl font-semibold">Deposit</h1>
+                    <h1 class="text-4xl font-bold">$<span id="deposit-balance">00</span></h1>
+                </div>
+                <div class="bg-blue-300 p-8 rounded text-white">
+                    <h1 class="text-2xl font-semibold">Withdraw</h1>
+                    <h1 class="text-4xl font-bold">$<span id="withdrow-balance">00</span></h1>
+                </div>
+                <div class="bg-red-300 p-8 rounded text-white">
+                    <h1 class="text-2xl font-semibold">Balance</h1>
+                    <h1 class="text-4xl font-bold">$<span id="total-balance">1000</span></h1>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="bg-yellow-500 p-12 rounded">
+                    <input id="deposit-input" class="p-2 block w-3/4 rounded" type="text"
+                        placeholder="Enter your deposit money">
+                    <button id="deposit-button" class="bg-green-900 px-4 py-2 rounded mt-2 text-white">Deposit</button>
+                </div>
+                <div class="bg-pink-500 p-12 rounded">
+                    <input id="withdrow-input" class="p-2 block w-3/4 rounded" type="text"
+                        placeholder="Enter your withdrow money">
+                    <button id="withdrow-button"
+                        class="bg-green-900 px-4 py-2 rounded mt-2 text-white">Withdrow</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bank.js"></script>
+</body>
+
+</html>

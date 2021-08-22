@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- add tailwind css  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-4xl mt-8">Dutch-Bangla Bank Your <span class="text-pink-500 font-bold">Trusted
+                Partner</span> !!</h1>
+    </header>
+    <main>
+        <section class="w-3/4 mx-auto mt-8 bg-green-300 p-8">
+            <h2 class="text-3xl text-purple-500 font-bold text-center">Login here</h2>
+            <p id="error"></p>
+            <div class="w-3/4 mx-auto border border-green-600 py-4 px-8 mt-4 rounded">
+                <h3 class="text-2xl text-yellow-500 font-bold">Login form</h3>
+                <input id="user-email" class="block mt-4 w-3/4 p-2 rounded" name="email" type="text"
+                    placeholder="Enter your email">
+                <input id="user-password" class="block my-4 w-3/4 p-2 rounded" type="password" name="" id=""
+                    placeholder="Enter your password">
+                <button id="login-submit" class="bg-green-900 px-4 py-2 font-bold text-white rounded">Submit</button>
+            </div>
+        </section>
+    </main>
+    <!-- add script  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
